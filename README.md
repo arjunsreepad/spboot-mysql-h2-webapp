@@ -25,3 +25,7 @@ A simple Todo list application using Spring Boot with the following options:
 
 
 ### Screenshots
+![Alt text](https://github.com/arjunsreepad/spboot-mysql-h2-webapp/raw/master/screenshot/app%20launch.png "App Launch")
+
+
+![Alt text](https://raw.githubusercontent.com/arjunsreepad/spboot-mysql-h2-webapp/master/screenshot/app%20after%20update.png "App after update")
