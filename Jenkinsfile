@@ -34,7 +34,7 @@ pipeline {
     
                 script{
                     
-                    ansiblePlaybook become: true, credentialsId: 'da93f539-19e1-401a-a3cd-55bfea924ba8', disableHostKeyChecking: true, inventory: 'ansible/inventory.ini', playbook: 'ansible/deploy.yml'
+                    ansiblePlaybook become: true, credentialsId: '8af1f853-ef41-4039-a069-b22d86ae4929', disableHostKeyChecking: true, inventory: 'ansible/inventory.ini', playbook: 'ansible/deploy.yml'
                 } // ansible-playbook -i inventory.ini deploy.yml ansible
                 }    // Stage 4
             }
