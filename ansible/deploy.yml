@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: no
   vars:
-    warname: todo.jar
+    warname: todo.war
 
   tasks:
 
