@@ -1,4 +1,4 @@
-[![Build Status](http://jenkins.arjunsreepad.com/buildStatus/icon?job=To+Do+List&build=5)](http://jenkins.arjunsreepad.com/job/To%20Do%20List/5/)
+[![Build Status](http://jenkins.arjunsreepad.com/buildStatus/icon?job=To+Do+List&build=5)](http://jenkins.arjunsreepad.com/job/To%20Do%20List/)
 
 # To Do List Web application using Spring Boot and MySQL/H2 In memory DB
 
