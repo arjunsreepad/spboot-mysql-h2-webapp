@@ -1,0 +1,37 @@
+---
+- hosts: all
+  gather_facts: no
+  vars:
+    warname: helloworld.jar
+
+  tasks:
+
+  - name: Get running processes   
+    shell: "ps -ef | grep -v grep | grep -w 'java -jar' | awk '{print $2}'"
+    register: running_processes
+
+  - name: Kill running processes
+    shell: "kill {{ item }}"
+    with_items: "{{ running_processes.stdout_lines }}"
+    
+  - name: Ansible copy file to remote server
+    copy:
+      src: "{{ warname }}"
+      dest: "/home/ec2-user/{{ warname }}"
+      owner: ec2-user
+      mode: u=rwx,g=rx,o=rx
+      
+  - name: Start the spring boot jar
+    shell: "nohup java -jar /home/ec2-user/{{ warname }} &"
+    
+  - name: "wait for application to come up"
+    uri:
+        url: "http://127.0.0.1:8080/"
+        status_code: 200
+    register: result
+    until: result.status == 200
+    retries: 60
+    delay: 10
+    
+
+    
