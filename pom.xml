@@ -5,7 +5,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>TodoDemo</artifactId>
 	<version>1.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>TodoDemo</name>
 	<description>Sample ToDo app for Spring Boot</description>
