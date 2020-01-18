@@ -6,7 +6,6 @@
 	<artifactId>TodoDemo</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-
 	<name>TodoDemo</name>
 	<description>Sample ToDo app for Spring Boot</description>
 
