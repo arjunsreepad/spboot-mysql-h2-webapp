@@ -33,7 +33,7 @@ pipeline {
                 
     
                 script{
-                    sh " cp target/*.war ansible/todo.war
+                    sh " cp target/*.war ansible/todo.war"
                     ansiblePlaybook become: true, credentialsId: '8af1f853-ef41-4039-a069-b22d86ae4929', disableHostKeyChecking: true, inventory: 'ansible/inventory.ini', playbook: 'ansible/deploy.yml'
                 // ansible-playbook -i inventory.ini deploy.yml ansible
                 }    // Stage 4
