@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: no
   vars:
-    warname: helloworld.jar
+    warname: todo.jar
 
   tasks:
 
