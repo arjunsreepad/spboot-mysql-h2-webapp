@@ -1,8 +1,5 @@
 pipeline {
-	agent {
-		label 'ec2'
-	}
-
+    agent any
    
 	stages {
 		stage('Git Checkout') {
